@@ -1,0 +1,14 @@
+[project]
+name = "creator-migration-helper"
+version = "0.1.0"
+description = "CLI to snapshot Zoho Creator schemas, diff changes, and seed Salesforce mappings."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+creator-migration-helper = "creator_migration_helper.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

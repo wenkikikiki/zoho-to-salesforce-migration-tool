@@ -1,0 +1,67 @@
+{
+  "objects": [
+    {
+      "api_name": "Vehicle__c",
+      "label": "Vehicle",
+      "fields": [
+        {
+          "api_name": "Vehicle_ID__c",
+          "label": "Vehicle ID",
+          "type": "Text"
+        },
+        {
+          "api_name": "Registration_Number__c",
+          "label": "Registration Number",
+          "type": "Text"
+        },
+        {
+          "api_name": "Mileage_km__c",
+          "label": "Mileage (km)",
+          "type": "Number"
+        },
+        {
+          "api_name": "Vehicle_Status__c",
+          "label": "Vehicle Status",
+          "type": "Picklist"
+        }
+      ]
+    },
+    {
+      "api_name": "Driver_Assignment__c",
+      "label": "Driver Assignment",
+      "fields": [
+        {
+          "api_name": "Driver_ID__c",
+          "label": "Driver ID",
+          "type": "Text"
+        },
+        {
+          "api_name": "Vehicle__c",
+          "label": "Vehicle",
+          "type": "Lookup"
+        },
+        {
+          "api_name": "Assignment_Date__c",
+          "label": "Assignment Date",
+          "type": "Date"
+        }
+      ]
+    },
+    {
+      "api_name": "Service_Log__c",
+      "label": "Service Log",
+      "fields": [
+        {
+          "api_name": "Vehicle__c",
+          "label": "Vehicle",
+          "type": "Lookup"
+        },
+        {
+          "api_name": "Service_Date__c",
+          "label": "Service Date",
+          "type": "Date"
+        }
+      ]
+    }
+  ]
+}

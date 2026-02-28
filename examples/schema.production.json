@@ -1,0 +1,64 @@
+{
+  "app": "fleet_hub",
+  "base_url": "www.zohoapis.com",
+  "environment": "production",
+  "forms": [
+    {
+      "display_name": "Assignments",
+      "fields": [
+        {
+          "data_type": "singleline",
+          "display_name": "Driver ID",
+          "link_name": "driver_id",
+          "mandatory": true,
+          "max_length": 20,
+          "unique": false
+        },
+        {
+          "data_type": "singleline",
+          "display_name": "Vehicle ID",
+          "link_name": "vehicle_id",
+          "mandatory": true,
+          "max_length": 20,
+          "unique": false
+        }
+      ],
+      "link_name": "Assignments",
+      "type": "Form"
+    },
+    {
+      "display_name": "Vehicles",
+      "fields": [
+        {
+          "data_type": "singleline",
+          "display_name": "Vehicle ID",
+          "link_name": "vehicle_id",
+          "mandatory": true,
+          "max_length": 20,
+          "unique": true
+        },
+        {
+          "data_type": "singleline",
+          "display_name": "Registration Number",
+          "link_name": "registration_number",
+          "mandatory": true,
+          "max_length": 16,
+          "unique": true
+        },
+        {
+          "data_type": "number",
+          "display_name": "Mileage",
+          "link_name": "mileage_km",
+          "mandatory": false,
+          "max_length": null,
+          "unique": false
+        }
+      ],
+      "link_name": "Vehicles",
+      "type": "Form"
+    }
+  ],
+  "generated_at": "2026-02-27T00:00:00+00:00",
+  "owner": "example_owner",
+  "schema_version": 1
+}
